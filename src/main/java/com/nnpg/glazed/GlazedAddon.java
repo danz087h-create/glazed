@@ -73,7 +73,6 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new FakeBanScreen());
         Modules.get().add(new SwingSpeed());
         Modules.get().add(new AdminList());
-        Modules.get().add(new AutoMine());
         Modules.get().add(new AutoPearlChain());
         Modules.get().add(new AutoSell());
         Modules.get().add(new AutoSpawnerSell());
@@ -110,6 +109,8 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new TpaMacro());
         Modules.get().add(new UdRelog());
 
+        Modules.get().add(new AutoMine());
+
         // pvp
         Modules.get().add(new AimAssist());
         Modules.get().add(new AnchorMacro());
@@ -122,6 +123,7 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new LungeMacro());
         Modules.get().add(new ShieldBreaker());
     }
+
 
     @EventHandler
     private void onGameJoined(GameJoinedEvent event) {
