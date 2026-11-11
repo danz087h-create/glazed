@@ -88,7 +88,11 @@ public class SoundESP extends Module {
         double x = sound.getX();
         double y = sound.getY();
         double z = sound.getZ();
-        INCOMING.offer(new SoundHit(x, y, z, source, sound.getLocation().toString(), System.currentTimeMillis()));
+        String soundId = "unknown";
+        if (sound.getSound() != null && sound.getSound().getSound() != null) {
+            soundId = sound.getSound().getSound().getLocation().toString();
+        }
+        INCOMING.offer(new SoundHit(x, y, z, source, soundId, System.currentTimeMillis()));
     }
 
     @Override
