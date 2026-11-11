@@ -63,6 +63,7 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new VillagerESP());
         Modules.get().add(new VineESP());
         Modules.get().add(new WanderingESP());
+        Modules.get().add(new SoundESP());
 
         // main
         Modules.get().add(new AHSell());
@@ -109,8 +110,6 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new TpaMacro());
         Modules.get().add(new UdRelog());
 
-        Modules.get().add(new AutoMine());
-
         // pvp
         Modules.get().add(new AimAssist());
         Modules.get().add(new AnchorMacro());
@@ -123,7 +122,6 @@ public class GlazedAddon extends MeteorAddon {
         Modules.get().add(new LungeMacro());
         Modules.get().add(new ShieldBreaker());
     }
-
 
     @EventHandler
     private void onGameJoined(GameJoinedEvent event) {
